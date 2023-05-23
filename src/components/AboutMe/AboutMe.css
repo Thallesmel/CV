@@ -1,102 +1,71 @@
 .about-me {
-  padding: 0 1rem 1.5rem;
   display: flex;
-  height: 90vh;
-  margin-bottom: 8rem;
-  margin-top: 10rem;
+  flex-direction: row;
+  height: 140vh;
+  padding: 2rem;
   overflow: hidden;
 }
 .a-blur1 {
-  left: -50rem;
+  top: 52rem;
+  right: 0rem;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -9;
 }
 .a-blur2 {
-  left: -55rem;
-  top: 10rem;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -9;
 }
-.about {
+.container {
   display: flex;
-  flex-direction: column;
-  position: relative;
+  flex-direction: row;
+  height: 100%;
 }
-.about > :nth-child(1) {
+.column {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.column > :nth-child(1) {
   color: var(--black);
   font-size: 2.5rem;
   font-weight: bold;
 }
-.about > :nth-child(2) {
+.column > :nth-child(2) {
   color: var(--blue);
   font-size: 2.5rem;
   font-weight: bold;
 }
-.about > :nth-child(3) {
+.column > :nth-child(3) {
   color: var(--gray);
   font-size: 14px;
   margin-top: 1rem;
 }
-.about > ul {
+.column > :nth-child(4) {
+  margin: 2rem;
+}
+.column > ul {
+  margin: 5rem 1rem 1rem 4rem;
   list-style: none;
-  top: 1rem;
-  position: relative;
   display: flex;
-  padding-top: 15px;
-  padding-right: 5px;
-  flex: 1;
+  height: 22rem;
+  width: 15rem;
+  padding: 1rem 1rem 1rem 1rem;
   flex-direction: column;
-  display: flex;
-  width: 13rem;
-  height: 20rem;
-  line-height: 13px;
   border-radius: 20px;
-  background-color: #fb00ff14;
   border: 2px solid var(--blue);
-  box-shadow: 7px 7px 1px 5px #fb00ff37;
-  transition: 0.5s;
-  animation: uls 2s alternate infinite;
+  transform: scale(1.2);
 }
-.about > ul:hover {
-  background-color: #00aeff14;
-  box-shadow: 7px 7px 1px 5px #00547b62;
-  transform: scale(1.5);
-}
-@keyframes uls {
-  0% {
-    top: 0rem;
-  }
 
-  50% {
-    top: 1rem;
-  }
-  100% {
-    top: 0rem;
-  }
-}
-@keyframes cardss {
-  0% {
-    top: 0rem;
-    right: calc(0px);
-  }
-  30% {
-    top: 0rem;
-    right: calc(+20px);
-  }
-  50% {
-    top: 1rem;
-    right: calc(0px);
-  }
-  80% {
-    top: 1rem;
-    right: calc(+20px);
-  }
-  100% {
-    top: 0rem;
-    right: calc(0px);
-  }
-}
-.about > ul > li {
+.column > ul > li {
   font-size: 14px;
   margin-top: 1rem;
 }
-.about > ul > li:nth-child(9) {
+.column > ul > li:nth-child(9) {
   font-size: 10px;
   margin-top: 1rem;
 }
@@ -109,212 +78,14 @@
 }
 
 .cards {
-  position: absolute;
-  margin-top: 30%;
+  display: flex;
+  overflow: hidden;
   width: 100%;
-  height: 35rem;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.cards1 > :nth-child(3) {
-  position: absolute;
-  margin-left: 25rem;
-  margin-top: -16rem;
+.cards * {
+  position: relative;
 }
-.cards1 > :nth-child(2) {
-  position: absolute;
-  margin-left: 26rem;
-  margin-top: -5rem;
-}
-.cards1 > :nth-child(1) {
-  position: absolute;
-  margin-left: 28rem;
-  margin-bottom: 2rem;
-}
-.cards > :nth-child(4) {
-  opacity: 0;
-}
-
-@media screen and (min-width: 390px) {
-  .about-me {
-    height: 50vh;
-    overflow: visible;
-    position: absolute;
-    width: 100%;
-  }
-  .a-button {
-    margin-left: 2%;
-  }
-  .about > ul {
-    justify-content: center;
-    margin-top: 100%;
-    position: absolute;
-    line-height: 9px;
-    width: 10rem;
-    height: 15rem;
-  }
-  .about > ul > li {
-    font-size: 10px;
-    margin-left: -15px;
-  }
-  .about {
-    position: absolute;
-    height: 42vh;
-  }
-  .cards {
-    position: absolute;
-    margin-top: 130%;
-    width: 100%;
-    height: 35rem;
-  }
-  .cards1 > :nth-child(3) {
-    position: absolute;
-    margin-left: -15rem;
-    margin-top: 20rem;
-  }
-  .cards1 > :nth-child(2) {
-    position: absolute;
-    margin-left: 12rem;
-    margin-top: 15rem;
-  }
-  .cards1 > :nth-child(1) {
-    position: absolute;
-    margin-left: -18rem;
-    margin-top: 10rem;
-  }
-  .cards > :nth-child(4) {
-    opacity: 0;
-  }
-}
-@media screen and (min-width: 360px) {
-  .about-me {
-    height: 50vh;
-    overflow: visible;
-    position: absolute;
-    width: 100%;
-    margin-top: 14rem;
-  }
-  .a-button {
-    margin-left: 2%;
-  }
-  .about > ul {
-    justify-content: center;
-    margin-top: 100%;
-    position: absolute;
-    line-height: 9px;
-    width: 10rem;
-    height: 15rem;
-  }
-  .about > ul > li {
-    font-size: 10px;
-    margin-left: -15px;
-  }
-  .about {
-    position: absolute;
-    height: 42vh;
-  }
-  .cards {
-    position: absolute;
-    margin-top: 130%;
-    width: 100%;
-    height: 35rem;
-  }
-  .cards1 > :nth-child(3) {
-    position: absolute;
-    margin-left: -15rem;
-    margin-top: 20rem;
-  }
-  .cards1 > :nth-child(2) {
-    position: absolute;
-    margin-left: 12rem;
-    margin-top: 15rem;
-  }
-  .cards1 > :nth-child(1) {
-    position: absolute;
-    margin-left: -18rem;
-    margin-top: 10rem;
-  }
-  .cards > :nth-child(4) {
-    opacity: 0;
-  }
-}
-@media screen and (min-width: 780px) {
-  .about-me {
-    padding: 0 1rem 1.5rem;
-    height: 130vh;
-    margin-bottom: 8rem;
-    margin-top: 10rem;
-    overflow: hidden;
-  }
-  .a-button {
-    margin-left: 2%;
-  }
-  .about > ul {
-    justify-content: center;
-    margin-top: 10%;
-    position: absolute;
-    line-height: 9px;
-    width: 10rem;
-    height: 15rem;
-  }
-  .about > ul > li {
-    font-size: 10px;
-    margin-left: -15px;
-  }
-  .about {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .cards {
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 10%;
-    width: 100%;
-    height: 35rem;
-  }
-  .about > ul {
-    list-style: none;
-    top: 1rem;
-    position: relative;
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 5px;
-    margin-left: 5%;
-    flex: 1;
-    flex-direction: column;
-    display: flex;
-    width: 13rem;
-    height: 20rem;
-    line-height: 13px;
-    border-radius: 20px;
-    background-color: #fb00ff14;
-    border: 2px solid var(--blue);
-    box-shadow: 7px 7px 1px 5px #fb00ff37;
-    transition: 0.5s;
-    animation: uls 2s alternate infinite;
-    transform: scale(1.2);
-  }
-  .about > ul:hover {
-    background-color: #00aeff14;
-    box-shadow: 7px 7px 1px 5px #00547b62;
-    transform: scale(1.1);
-  }
-  .cards1 > :nth-child(3) {
-    position: absolute;
-    margin-left: 25rem;
-    margin-top: -16rem;
-  }
-  .cards1 > :nth-child(2) {
-    position: absolute;
-    margin-left: 26rem;
-    margin-top: -5rem;
-  }
-  .cards1 > :nth-child(1) {
-    position: absolute;
-    margin-left: 28rem;
-    margin-top: 5rem;
-  }
-  .cards > :nth-child(4) {
-    opacity: 0;
-  }
+.cards > :nth-child(1) {
 }

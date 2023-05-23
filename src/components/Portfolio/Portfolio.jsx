@@ -5,7 +5,7 @@ import { themeContext } from '../../context';
 import Contact from '../../components/Contact/Contact';
 import SwiperCore, { Autoplay } from 'swiper';
 import CriptoAPI from '../CriptoAPI/CriptoAPI';
-import NewsAPI from '../NewsAPI/NewsAPI';
+import Linkedin from '../Linkedin/Linkedin';
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -82,7 +82,7 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className='projs'>
-            <NewsAPI />
+            <Linkedin />
           </div>
         </SwiperSlide>
       </Swiper>

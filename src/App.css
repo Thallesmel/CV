@@ -12,12 +12,6 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-.App {
-  width: 75.9rem;
-  scroll-margin-bottom: hidden;
-  padding: 1.5rem 2.5rem;
-  color: var(--black);
-}
 .button {
   justify-content: center;
   border-radius: 34px;
@@ -32,22 +26,4 @@
   cursor: pointer;
   color: var(--black);
   border: 1px solid var(--blue);
-}
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    padding: 0;
-  }
-  .App {
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 600px) {
-  section,
-  asite {
-    width: 100%;
-  }
 }

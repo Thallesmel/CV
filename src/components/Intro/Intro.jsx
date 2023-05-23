@@ -8,6 +8,7 @@ import Img1 from '../../img/quality.png';
 import Img2 from '../../img/react.png';
 import { themeContext } from '../../context';
 import { motion } from 'framer-motion';
+import { isVisible } from '@testing-library/user-event/dist/utils';
 
 const transition = { duration: 2, type: 'spring' };
 
@@ -17,7 +18,7 @@ const Intro = () => {
 
   return (
     <div className='intro' id='portfilio-destination' name='portfilio-destiny'>
-      <div className='i-left'>
+      <section className='i-left'>
         <div className='i-name'>
           <span
             style={darkMode ? { color: 'white' } : { color: 'var(--black)' }}
@@ -56,8 +57,8 @@ const Intro = () => {
             alt=''
           />
         </div>
-      </div>
-      <div className='i-right'>
+      </section>
+      <section className='i-right'>
         <svg
           width='1000'
           height='1000'
@@ -324,7 +325,7 @@ const Intro = () => {
           className='blur'
           style={{
             backgroundColor: '#fb00ff4e',
-            right: '-5rem',
+            right: '5rem',
             bottom: '-5rem',
           }}
         ></div>
@@ -336,7 +337,7 @@ const Intro = () => {
             bottom: '20rem',
           }}
         ></div>
-      </div>
+      </section>
     </div>
   );
 };

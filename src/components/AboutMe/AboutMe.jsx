@@ -14,65 +14,64 @@ const AboutMe = () => {
 
   return (
     <div className='about-me' id='aboutMe-section'>
-      <div className='about'>
+      <div className='column'>
         <span style={darkMode ? { color: 'white' } : { color: 'var(--black)' }}>
           About me
         </span>
         <span>Personal Informations</span>
-        <span style={darkMode ? { color: 'var(--gray)' } : { color: 'white' }}>
+        <span style={darkMode ? { color: 'white' } : { color: 'var(--gray)' }}>
           Age, Nationality, Lenguage levels, Hobbies, Goals, Address
         </span>
         <a style={{ width: '8rem' }} href={Cv} download>
           <button className='button a-button'>Download CV</button>
         </a>
-        <ul style={darkMode ? { color: 'white' } : { color: 'black' }}>
-          <li>Age: 19 years old</li>
+        <ul style={darkMode ? { color: 'white' } : { color: 'var(--black)' }}>
+          <li>Age: 20 years old</li>
           <li>Nationality: Brazilian</li>
-          <li>Lenguage Levels:</li>
-          <li>Portuguese: Native Lenguage</li>
+          <li>Language Levels:</li>
+          <li>Portuguese: Native Language</li>
           <li>English: Advanced</li>
           <li>German: intermediate</li>
           <li>Hobbies: Art and Music</li>
           <li>Goals: Full-stack Web Developer</li>
           <li>Address: Rua Maria Dalina, 443, 54315662, Brazil</li>
         </ul>
+      </div>
+      <section className='container'>
         <div
           className='blur a-blur1'
           style={{ backgroundColor: '#00dade81' }}
         ></div>
-      </div>
-
-      <div className='cards'>
-        <div className='cards1'>
+        <div className='cards'>
           <motion.div
-            initial={{ left: '35em' }}
+            initial={{ left: '35rem' }}
             whileInView={{ left: '14rem' }}
             transition={transition}
           >
             <Card
-              id='card1'
+              id='card'
               emoji={Book}
               heading={'Education'}
-              experience={87}
-              detail={'Studied in Brazil, University(sudying now)'}
+              experience={80}
+              detail={'Software Engineering University Estacio'}
             />
           </motion.div>
           <motion.div
-            id='card2'
-            initial={{ left: '-8em' }}
-            whileInView={{ left: '-4rem' }}
+            id='card'
+            initial={{ left: '8rem' }}
+            whileInView={{ left: '4rem' }}
             transition={transition}
           >
             <Card
               emoji={Coding}
               heading={'Coding'}
-              experience={65}
-              detail={'JavaScript, Java, HTML, CSS, React, SQL'}
+              experience={100}
+              detail={'Java, JS, React Native, C# and more'}
             />
           </motion.div>
           <motion.div
-            id='card3'
-            initial={{ left: '30em' }}
+            id='card'
+            initial={{ left: '30rem' }}
             whileInView={{ left: '12rem' }}
             transition={transition}
           >
@@ -80,11 +79,11 @@ const AboutMe = () => {
               emoji={People}
               heading={'Comunication'}
               experience={93}
-              detail={'Good in teamwork, Happy to help!'}
+              detail={'Happy teamwork, Ready to help!'}
             />
           </motion.div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

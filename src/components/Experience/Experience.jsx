@@ -7,7 +7,7 @@ const Experience = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className='experience' id='experience-section'>
+    <div className='experience'>
       <svg
         style={{
           position: 'absolute',
@@ -62,23 +62,32 @@ const Experience = () => {
           className='circle'
           style={darkMode ? { color: 'white' } : { color: 'var(--black)' }}
         >
-          3+
+          5+
         </div>
         <span style={darkMode ? { Color: 'white' } : { color: 'var(--black)' }}>
           years
         </span>
         <span>Programming logic</span>
       </div>
-
       <div className='achievement'>
         <div
           className='circle'
           style={darkMode ? { color: 'white' } : { color: 'var(--black)' }}
         >
-          6+
+          4+
         </div>
-        <span>Months</span>
-        <span>JavaScript Experience</span>
+        <span>years</span>
+        <span>Web Developer</span>
+      </div>
+      <div className='achievement'>
+        <div
+          className='circle'
+          style={darkMode ? { color: 'white' } : { color: 'var(--black)' }}
+        >
+          3+
+        </div>
+        <span>years</span>
+        <span>JavaScript</span>
       </div>
 
       <div className='achievement'>
@@ -89,7 +98,29 @@ const Experience = () => {
           1+
         </div>
         <span>years</span>
-        <span>Web Design</span>
+        <span>React native</span>
+      </div>
+
+      <div className='achievement'>
+        <div
+          className='circle'
+          style={darkMode ? { color: 'white' } : { color: 'var(--black)' }}
+        >
+          2+
+        </div>
+        <span>years</span>
+        <span>Java Experience</span>
+      </div>
+      <div className='achievement'>
+        <div
+          className='circle'
+          style={darkMode ? { color: 'white' } : { color: 'var(--black)' }}
+        >
+          1+
+        </div>
+        
+        <span>years</span>
+        <span>C# Experience</span>
       </div>
     </div>
   );

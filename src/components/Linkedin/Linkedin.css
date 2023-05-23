@@ -1,0 +1,26 @@
+.Linkedin {
+    display: flex;
+    justify-content: center;
+}
+.Linkedin >:nth-child(1) {
+    filter: blur(2px);
+}
+.Linkedin >:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: fixed;
+    color: var(--black);
+    font-size: 5rem;
+    font-weight: bolder;
+}
+.Linkedin >:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: fixed;
+    color: var(--pink);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 5rem;
+}
