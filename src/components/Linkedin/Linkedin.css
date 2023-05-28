@@ -15,10 +15,7 @@
     font-weight: bolder;
 }
 .Linkedin >:nth-child(3) {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    position: fixed;
+
     color: var(--pink);
     font-size: 2.5rem;
     font-weight: bold;

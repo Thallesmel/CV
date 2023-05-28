@@ -5,7 +5,7 @@
   gap: 2rem;
   height: 30vh;
   margin-top: 5rem;
-  overflow: hiddend;
+  overflow: hidden;
 }
 .achievement {
   display: flex;
@@ -38,4 +38,19 @@
 }
 .achievement span:nth-child(3) {
   color: var(--pink);
+}
+@media screen and (max-width: 391px) {
+  .experience {
+    display: flex;
+    margin: 2rem;
+    width: 100vw;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    flex-direction: row;
+  }
+  .experience * {
+    margin: 0;
+    transform: scale(0.7);
+  }
 }

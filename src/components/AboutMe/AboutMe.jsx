@@ -6,8 +6,8 @@ import Coding from '../../img/binary-code.png';
 import People from '../../img/people.png';
 import { themeContext } from '../../context';
 import { motion } from 'framer-motion';
-const transition = { duration: 2, type: 'spring' };
 
+const transition = { duration: 2, type: 'spring' };
 const AboutMe = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;

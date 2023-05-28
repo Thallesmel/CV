@@ -60,3 +60,23 @@
   height: 30rem;
   justify-content: center;
 }
+@media screen and (max-width: 391px) {
+  .portfolio {
+    margin: 0;
+    width: 100vw;
+    height: 120vh;
+    overflow: hidden;
+    margin-bottom: 5rem;
+  }
+  .portfolio >:nth-child(1) {
+    margin-left: -10rem;
+  }
+  .portfolio .swiper {
+  transform: scale(0.7);
+  }
+}@media screen and (max-width: 376px) {
+  .portfolio {
+    height: 130vh;
+  }
+
+}
